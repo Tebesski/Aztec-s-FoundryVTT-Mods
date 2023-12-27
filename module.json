@@ -21,5 +21,6 @@
   "scripts": [
     "rarity-colors.js"
   ],
-  "url": "https://github.com/Tebesski/Aztec-s-PF1e-Rarity-Colors"
+  "url": "https://github.com/Tebesski/Aztec-s-PF1e-Rarity-Colors",
+  "manifest": "https://raw.githubusercontent.com/Tebesski/Aztec-s-PF1e-Rarity-Colors/main/module.json"
 }
