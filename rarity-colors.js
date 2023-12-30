@@ -48,6 +48,10 @@ Hooks.on("renderItemSheetPF", (i, html) => {
       html.find(
          `input[placeholder="Item Name"]`
       )[0].style = `color: ${itemRarityColor[0]};text-shadow: ${itemRarityColor[1]}`
+
+      html.find(
+         `input[placeholder="Unidentified Name"]`
+      )[0].style = `color: ${itemRarityColor[0]};text-shadow: ${itemRarityColor[1]}`
    } else return
 })
 
@@ -81,7 +85,7 @@ Hooks.on("renderVaultApp", (pile) => {
 
       for (let html of pile.element.find(`.grid-item`)) {
          if (html.getAttribute("data-fast-tooltip") == item.name) {
-            html.style = `box-shadow: inset 0 0 10px ${itemRarityColor[0]};outline: 1px solid ${itemRarityColor[2]}`
+            html.style = `box-shadow: ${itemRarityColor[0]} 0px 0px 0px 2px;`
          }
       }
    })
@@ -105,3 +109,5 @@ Hooks.on("renderMerchantApp", (pile) => {
       }
    })
 })
+
+//  rgba(0, 217, 128, 0.5) 0px 0px 0px 3px;
